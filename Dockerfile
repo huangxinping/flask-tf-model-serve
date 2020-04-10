@@ -6,7 +6,7 @@ RUN echo "deb http://storage.googleapis.com/tensorflow-serving-apt stable tensor
     curl https://storage.googleapis.com/tensorflow-serving-apt/tensorflow-serving.release.pub.gpg | apt-key add - && \
     apt-get update && \
     apt-get install -y tensorflow-model-server && \
-    pip install -r requirements.txt
+    pip install -r /app/requirements.txt
 
 WORKDIR /app
 
