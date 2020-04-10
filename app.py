@@ -67,5 +67,6 @@ def image_classifier():
     # Returning JSON response to the frontend
     return np.array2string(imagenet_labels[top_three], separator=',')
 
+
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
