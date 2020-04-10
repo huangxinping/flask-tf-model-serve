@@ -10,4 +10,6 @@ RUN echo "deb http://storage.googleapis.com/tensorflow-serving-apt stable tensor
 
 WORKDIR /app
 
-RUN ["bash", "entrypoints.sh"]
+EXPOSE 5000
+
+CMD ["bash", "entrypoints.sh"]
